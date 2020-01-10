@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace></RootNamespace>
+    <BaseDirectory>..\..\..\lib</BaseDirectory>
+    <PackageId>SimulationFrame</PackageId>
+    <Version>0.0.1-a1</Version>
+    <Authors>Piot</Authors>
+    <Copyright>Copyright Peter Bjorklund 2017</Copyright>
+    <PackageLicense>MIT</PackageLicense>
+    <PackageProjectUrl>https://github.com/Piot/simulation-frame-dotnet</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/piot/simulation-frame-dotnet.git</RepositoryUrl>
+    <PackageIconUrl></PackageIconUrl>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageTags></PackageTags>
+    <IncludeSymbols>true</IncludeSymbols>
+    <Description>Simulation Frame</Description>
+  </PropertyGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>
