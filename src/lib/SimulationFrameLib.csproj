@@ -4,7 +4,7 @@
     <RootNamespace></RootNamespace>
     <BaseDirectory>..\..\..\lib</BaseDirectory>
     <PackageId>SimulationFrame</PackageId>
-    <Version>0.0.1-a1</Version>
+    <Version>0.0.1-a2</Version>
     <Authors>Piot</Authors>
     <Copyright>Copyright Peter Bjorklund 2017</Copyright>
     <PackageLicense>MIT</PackageLicense>
