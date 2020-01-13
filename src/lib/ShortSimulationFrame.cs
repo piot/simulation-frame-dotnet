@@ -25,42 +25,15 @@ SOFTWARE.
 */
 namespace Piot.SimulationFrame
 {
-    using System;
-
-    public static class ShortSimulationFrame
+    public struct ForwardDeltaSimulationFrame
     {
-        public static byte FromSimulationFrame(long simulationFrame)
+        public byte DeltaFrame;
+
+        public override string ToString()
         {
-            return (byte)(simulationFrame & 0xff);
+            return $"[delta {DeltaFrame}]";
         }
-
-        public static int Delta(byte beforeShort, byte current)
-        {
-            var delta = 0;
-
-            if (current < beforeShort)
-            {
-                // Wrap around
-                delta = (256 - beforeShort) + current;
-            }
-            else
-            {
-                delta = current - beforeShort;
-            }
-
-            if (delta > 127)
-            {
-                throw new Exception($"short simulation frames are too close {beforeShort} and {current}");
-            }
-
-            return delta;
-        }
-
-        public static long ToSimulationFrame(long simulationFrameReference, byte shortSimulationFrame)
-        {
-            var referenceShort = FromSimulationFrame(simulationFrameReference);
-            var delta = Delta(referenceShort, shortSimulationFrame);
-            return simulationFrameReference + delta;
-        }
+        
     }
+    
 }

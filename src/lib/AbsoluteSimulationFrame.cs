@@ -25,11 +25,14 @@ SOFTWARE.
 */
 namespace Piot.SimulationFrame
 {
-    public static class ElapsedSimulationFrame
+    public struct AbsoluteSimulationFrame
     {
-        public static AbsoluteSimulationFrame FromElapsedMilliseconds(long ms)
+        public long Frame;
+
+        public override string ToString()
         {
-            return new AbsoluteSimulationFrame { Frame = ms / (1000 / 60) };
+            return $"[simframe {Frame} ({Frame & 0xff})]";
         }
     }
+    
 }
